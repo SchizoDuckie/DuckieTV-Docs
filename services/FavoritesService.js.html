@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>DuckieTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/cayman.css">
+    <link rel="stylesheet" href="../css/prism.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">DuckieTV</h1>
+      <h2 class="project-tagline">DuckieTV helps you manage your favorite TV Shows on a sweet calendar</h2><a href="https://npmjs.com/package/DuckieTV-Standalone" target="_blank" class="btn">View on npm</a>
+    </section>
+    <section data-spy="scroll" data-target=".scrollspy" class="main-content">
+      <div class="row">
+        <div class="col-md-3 col-xs-3 bs-docs-sidebar">
+          <ul id="sidebar" class="nav nav-stacked fixed">
+            <li><a href="../index.html">Main</a></li>
+            <li><a href="../CRUD.entities.js.html">CRUD.entities.js</a></li>
+            <li><a href="../app.authHttpBackend.js.html">app.authHttpBackend.js</a></li>
+            <li><a href="../app.js.html">app.js</a></li>
+            <li><a href="../app.requestinterceptors.js.html">app.requestinterceptors.js</a></li>
+            <li><a href="../app.routes.js.html">app.routes.js</a></li>
+            <li><a href="../app.standalone.systray.js.html">app.standalone.systray.js</a></li>
+            <li><a href="../app.standalone.update.js.html">app.standalone.update.js</a></li>
+            <li><a href="../app.standalone.windowdressing.js.html">app.standalone.windowdressing.js</a></li>
+            <li><a href="../app.standalone.zoom.js.html">app.standalone.zoom.js</a></li>
+            <li><a href="../app.translate.js.html">app.translate.js</a></li>
+            <li><a href="../background.js.html">background.js</a></li>
+            <li><a href="../classes/RemoteAPI.js.html">classes/RemoteAPI.js</a></li>
+            <li><a href="../controllers/ActionBarCtrl.js.html">controllers/ActionBarCtrl.js</a></li>
+            <li><a href="../controllers/WatchlistCtrl.js.html">controllers/WatchlistCtrl.js</a></li>
+            <li><a href="../controllers/serieslist/LocalSeriesCtrl.js.html">controllers/serieslist/LocalSeriesCtrl.js</a></li>
+            <li><a href="../controllers/serieslist/SeriesListCtrl.js.html">controllers/serieslist/SeriesListCtrl.js</a></li>
+            <li><a href="../controllers/serieslist/TraktTVSearchCtrl.js.html">controllers/serieslist/TraktTVSearchCtrl.js</a></li>
+            <li><a href="../controllers/serieslist/TraktTVTrendingCtrl.js.html">controllers/serieslist/TraktTVTrendingCtrl.js</a></li>
+            <li><a href="../controllers/settings/BackupCtrl.js.html">controllers/settings/BackupCtrl.js</a></li>
+            <li><a href="../controllers/settings/CalendarCtrl.js.html">controllers/settings/CalendarCtrl.js</a></li>
+            <li><a href="../controllers/settings/DisplayCtrl.js.html">controllers/settings/DisplayCtrl.js</a></li>
+            <li><a href="../controllers/settings/LanguageCtrl.js.html">controllers/settings/LanguageCtrl.js</a></li>
+            <li><a href="../controllers/settings/SerieTorrentSettingsCtrl.js.html">controllers/settings/SerieTorrentSettingsCtrl.js</a></li>
+            <li><a href="../controllers/settings/SettingsTorrentCtrl.js.html">controllers/settings/SettingsTorrentCtrl.js</a></li>
+            <li><a href="../controllers/settings/SubtitlesCtrl.js.html">controllers/settings/SubtitlesCtrl.js</a></li>
+            <li><a href="../controllers/settings/SyncCtrl.js.html">controllers/settings/SyncCtrl.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/Deluge.js.html">controllers/settings/TorrentClients/Deluge.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/Tixati.js.html">controllers/settings/TorrentClients/Tixati.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/Transmission.js.html">controllers/settings/TorrentClients/Transmission.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/Vuze.js.html">controllers/settings/TorrentClients/Vuze.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/qBittorrent.js.html">controllers/settings/TorrentClients/qBittorrent.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/qBittorrent32plus.js.html">controllers/settings/TorrentClients/qBittorrent32plus.js</a></li>
+            <li><a href="../controllers/settings/TorrentClients/uTorrentWebUI.js.html">controllers/settings/TorrentClients/uTorrentWebUI.js</a></li>
+            <li><a href="../controllers/settings/TraktTVCtrl.js.html">controllers/settings/TraktTVCtrl.js</a></li>
+            <li><a href="../controllers/settings/customSearchEngineCtrl.js.html">controllers/settings/customSearchEngineCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/AboutCtrl.js.html">controllers/sidepanel/AboutCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/SettingsCtrl.js.html">controllers/sidepanel/SettingsCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/SidepanelEpisodeCtrl.js.html">controllers/sidepanel/SidepanelEpisodeCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/SidepanelSeasonCtrl.js.html">controllers/sidepanel/SidepanelSeasonCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/SidepanelSeasonsCtrl.js.html">controllers/sidepanel/SidepanelSeasonsCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/SidepanelSerieCtrl.js.html">controllers/sidepanel/SidepanelSerieCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/SidepanelTraktSerieCtrl.js.html">controllers/sidepanel/SidepanelTraktSerieCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/TorrentCtrl.js.html">controllers/sidepanel/TorrentCtrl.js</a></li>
+            <li><a href="../controllers/sidepanel/TorrentDetailsCtrl.js.html">controllers/sidepanel/TorrentDetailsCtrl.js</a></li>
+            <li><a href="../directives/backgroundRotator.js.html">directives/backgroundRotator.js</a></li>
+            <li><a href="../directives/calendar.js.html">directives/calendar.js</a></li>
+            <li><a href="../directives/calendarEvent.js.html">directives/calendarEvent.js</a></li>
+            <li><a href="../directives/chromeTopSites.js.html">directives/chromeTopSites.js</a></li>
+            <li><a href="../directives/datePicker.js.html">directives/datePicker.js</a></li>
+            <li><a href="../directives/episodeDownloaded.js.html">directives/episodeDownloaded.js</a></li>
+            <li><a href="../directives/episodeWatched.js.html">directives/episodeWatched.js</a></li>
+            <li><a href="../directives/fastSearch.js.html">directives/fastSearch.js</a></li>
+            <li><a href="../directives/focusWatch.js.html">directives/focusWatch.js</a></li>
+            <li><a href="../directives/lazyBackground.js.html">directives/lazyBackground.js</a></li>
+            <li><a href="../directives/loadingSpinner.js.html">directives/loadingSpinner.js</a></li>
+            <li><a href="../directives/mouseWheelDown.js.html">directives/mouseWheelDown.js</a></li>
+            <li><a href="../directives/mouseWheelUp.js.html">directives/mouseWheelUp.js</a></li>
+            <li><a href="../directives/queryMonitor.js.html">directives/queryMonitor.js</a></li>
+            <li><a href="../directives/serieDetails.js.html">directives/serieDetails.js</a></li>
+            <li><a href="../directives/serieheader.js.html">directives/serieheader.js</a></li>
+            <li><a href="../directives/seriesList.js.html">directives/seriesList.js</a></li>
+            <li><a href="../directives/sidePanel.js.html">directives/sidePanel.js</a></li>
+            <li><a href="../directives/stopEvent.js.html">directives/stopEvent.js</a></li>
+            <li><a href="../directives/subtitleDialog.js.html">directives/subtitleDialog.js</a></li>
+            <li><a href="../directives/targetBlank.js.html">directives/targetBlank.js</a></li>
+            <li><a href="../directives/torrentDialog.js.html">directives/torrentDialog.js</a></li>
+            <li><a href="../directives/torrentRemoteControl.js.html">directives/torrentRemoteControl.js</a></li>
+            <li><a href="../services/AutoDownloadService.js.html">services/AutoDownloadService.js</a></li>
+            <li><a href="../services/BaseHTTPApi.js.html">services/BaseHTTPApi.js</a></li>
+            <li><a href="../services/CalendarEvents.js.html">services/CalendarEvents.js</a></li>
+            <li><a href="../services/ChromeStorageSyncTarget.js.html">services/ChromeStorageSyncTarget.js</a></li>
+            <li><a href="../services/DuckieTorrent.js.html">services/DuckieTorrent.js</a></li>
+            <li><a href="../services/EpisodeWatchedMonitor.js.html">services/EpisodeWatchedMonitor.js</a></li>
+            <li class="active"><a href="../services/FavoritesService.js.html">services/FavoritesService.js
+                <ul class="nav nav-stacked">
+                  <li><a href="#addFavorite"><i class="alert alert-info"></i><span>addFavorite</span></a>
+                  </li>
+                  <li><a href="#getEpisodes"><i class="alert alert-info"></i><span>getEpisodes</span></a>
+                  </li>
+                  <li><a href="#getById"><i class="alert alert-info"></i><span>getById</span></a>
+                  </li>
+                  <li><a href="#remove"><i class="alert alert-info"></i><span>remove</span></a>
+                  </li>
+                  <li><a href="#getSeries"><i class="alert alert-info"></i><span>getSeries</span></a>
+                  </li>
+                  <li><a href="#loadRandomBackground"><i class="alert alert-info"></i><span>loadRandomBackground</span></a>
+                  </li>
+                  <li><a href="#adding"><i class="alert alert-info"></i><span>adding</span></a>
+                  </li>
+                  <li><a href="#added"><i class="alert alert-info"></i><span>added</span></a>
+                  </li>
+                  <li><a href="#flushAdding"><i class="alert alert-info"></i><span>flushAdding</span></a>
+                  </li>
+                  <li><a href="#isAdding"><i class="alert alert-info"></i><span>isAdding</span></a>
+                  </li>
+                  <li><a href="#isAdded"><i class="alert alert-info"></i><span>isAdded</span></a>
+                  </li>
+                  <li><a href="#clearAdding"><i class="alert alert-info"></i><span>clearAdding</span></a>
+                  </li>
+                  <li><a href="#addError"><i class="alert alert-info"></i><span>addError</span></a>
+                  </li>
+                  <li><a href="#isError"><i class="alert alert-info"></i><span>isError</span></a>
+                  </li>
+                  <li><a href="#clearError"><i class="alert alert-info"></i><span>clearError</span></a>
+                  </li>
+                </ul></a></li>
+            <li><a href="../services/FileReader.js.html">services/FileReader.js</a></li>
+            <li><a href="../services/FormlyLoaderService.js.html">services/FormlyLoaderService.js</a></li>
+            <li><a href="../services/GoogleImages.js.html">services/GoogleImages.js</a></li>
+            <li><a href="../services/IMDB.js.html">services/IMDB.js</a></li>
+            <li><a href="../services/MigrationService.js.html">services/MigrationService.js</a></li>
+            <li><a href="../services/Netflix.js.html">services/Netflix.js</a></li>
+            <li><a href="../services/NotificationService.js.html">services/NotificationService.js</a></li>
+            <li><a href="../services/OpenSubtitles.js.html">services/OpenSubtitles.js</a></li>
+            <li><a href="../services/PowderPlayer.js.html">services/PowderPlayer.js</a></li>
+            <li><a href="../services/SceneNameResolver.js.html">services/SceneNameResolver.js</a></li>
+            <li><a href="../services/SceneXemResolver.js.html">services/SceneXemResolver.js</a></li>
+            <li><a href="../services/SettingsService.js.html">services/SettingsService.js</a></li>
+            <li><a href="../services/StorageSyncService.js.html">services/StorageSyncService.js</a></li>
+            <li><a href="../services/SyncManager.js.html">services/SyncManager.js</a></li>
+            <li><a href="../services/TorrentClients/BaseTorrentClient.js.html">services/TorrentClients/BaseTorrentClient.js</a></li>
+            <li><a href="../services/TorrentClients/Deluge.js.html">services/TorrentClients/Deluge.js</a></li>
+            <li><a href="../services/TorrentClients/Tixati.js.html">services/TorrentClients/Tixati.js</a></li>
+            <li><a href="../services/TorrentClients/TorrentData.js.html">services/TorrentClients/TorrentData.js</a></li>
+            <li><a href="../services/TorrentClients/Transmission.js.html">services/TorrentClients/Transmission.js</a></li>
+            <li><a href="../services/TorrentClients/Vuze.js.html">services/TorrentClients/Vuze.js</a></li>
+            <li><a href="../services/TorrentClients/qBittorrent.js.html">services/TorrentClients/qBittorrent.js</a></li>
+            <li><a href="../services/TorrentClients/qBittorrent32plus.js.html">services/TorrentClients/qBittorrent32plus.js</a></li>
+            <li><a href="../services/TorrentClients/uTorrent.js.html">services/TorrentClients/uTorrent.js</a></li>
+            <li><a href="../services/TorrentClients/uTorrentWebUI.js.html">services/TorrentClients/uTorrentWebUI.js</a></li>
+            <li><a href="../services/TorrentFreak.js.html">services/TorrentFreak.js</a></li>
+            <li><a href="../services/TorrentHashListService.js.html">services/TorrentHashListService.js</a></li>
+            <li><a href="../services/TorrentMonitor.js.html">services/TorrentMonitor.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/GenericTorrentSearchEngine.js.html">services/TorrentSearchEngines/GenericTorrentSearchEngine.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/Kickass.js.html">services/TorrentSearchEngines/Kickass.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/KickassMirrorResolver.js.html">services/TorrentSearchEngines/KickassMirrorResolver.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/Nyaa.js.html">services/TorrentSearchEngines/Nyaa.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/RarBG.js.html">services/TorrentSearchEngines/RarBG.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/ShowRSS.js.html">services/TorrentSearchEngines/ShowRSS.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/Strike.js.html">services/TorrentSearchEngines/Strike.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/ThePirateBay.js.html">services/TorrentSearchEngines/ThePirateBay.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/ThePirateBayMirrorResolver.js.html">services/TorrentSearchEngines/ThePirateBayMirrorResolver.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/TorrentSearchEngines.js.html">services/TorrentSearchEngines/TorrentSearchEngines.js</a></li>
+            <li><a href="../services/TorrentSearchEngines/Torrentz.eu.js.html">services/TorrentSearchEngines/Torrentz.eu.js</a></li>
+            <li><a href="../services/TraktTVStorageSyncTarget.js.html">services/TraktTVStorageSyncTarget.js</a></li>
+            <li><a href="../services/TraktTVTrending.js.html">services/TraktTVTrending.js</a></li>
+            <li><a href="../services/TraktTVUpdateService.js.html">services/TraktTVUpdateService.js</a></li>
+            <li><a href="../services/TraktTVv2.js.html">services/TraktTVv2.js</a></li>
+            <li><a href="../services/UpgradeNotificationService.js.html">services/UpgradeNotificationService.js</a></li>
+            <li><a href="../services/WatchlistCheckerService.js.html">services/WatchlistCheckerService.js</a></li>
+            <li><a href="../services/WatchlistService.js.html">services/WatchlistService.js</a></li>
+            <li><a href="../utility.js.html">utility.js</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div class="description"><p>Persistent storage for favorite series and episode</p><p>Provides functionality to add and remove series and is the glue between Trakt.TV,</p></div>
+          <pre><code class="language-javascript">DuckieTV.factory('FavoritesService', [&quot;$q&quot;, &quot;$rootScope&quot;, &quot;TraktTVv2&quot;, &quot;$injector&quot;,
+    function($q, $rootScope, TraktTVv2, $injector) {</code></pre>
+          <div class="description"><p>Helper function to add a serie to the service.favorites hash if it doesn&#39;t already exist.<br />update existing otherwise.</p></div>
+          <pre><code class="language-javascript">addToFavoritesList = function(serie) {
+    var existing = service.favorites.filter(function(el) {
+        return el.TVDB_ID == serie.TVDB_ID;
+    });
+    if (existing.length === 0) {
+        service.favorites.push(serie);
+    } else {
+        service.favorites[service.favorites.indexOf(existing[0])] = serie;
+    }
+    service.favoriteIDs.push(serie.TVDB_ID.toString());
+};</code></pre>
+          <div class="description"><p>Helper function to map properties from the input data on a serie from Trakt.TV into a Serie CRUD object.<br />Input information will always overwrite existing information.</p></div>
+          <pre><code class="language-javascript">fillSerie = function(serie, data) {
+    data.TVDB_ID = data.tvdb_id;
+    data.TVRage_ID = data.tvrage_id;
+    data.IMDB_ID = data.imdb_id;
+    data.contentrating = data.certification;
+    data.name = data.title;
+    data.airs_dayofweek = data.airs.day;
+    data.airs_time = data.airs.time;
+    data.timezone = data.airs.timezone;
+    data.firstaired = new Date(data.first_aired).getTime();
+    if (service.downloadRatings &amp;&amp; (!serie.ratingcount || serie.ratingcount + 25 &gt; data.votes)) {
+        data.rating = Math.round(data.rating * 10);
+        data.ratingcount = data.votes;
+    } else {
+        delete data.rating;
+        delete data.ratingcount;
+    }
+    data.genre = data.genres.join('|');
+    data.lastupdated = data.updated_at;
+    if (data.people &amp;&amp; 'cast' in data.people) {
+        data.actors = data.people.cast.map(function(actor) {
+            if ('character' in actor &amp;&amp; actor.character != '') {
+                return actor.person.name + ' (' + actor.character + ')';
+            } else {
+                return actor.person.name;
+            }
+        }).join('|');
+    }
+    if (serie.added == null) {
+        data.added = new Date().getTime();
+    }
+    for (var i in data) {
+        if ((i in serie)) {
+            serie[i] = data[i];
+        }
+    }
+};</code></pre>
+          <div class="description"><p>Helper function to map properties from the input data from Trakt.TV into a Episode CRUD object.<br />Input information will always overwrite existing information.</p></div>
+          <pre><code class="language-javascript">fillEpisode = function(episode, data, season, serie, watched) {
+    // remap some properties on the data object to make them easy to set with a for loop. the CRUD object doesn't persist properties that are not registered, so that's cheap.
+    data.TVDB_ID = data.tvdb_id;
+    data.IMDB_ID = data.imdb_id;
+    data.TRAKT_ID = data.trakt_id;
+    if (service.downloadRatings &amp;&amp; (!episode.ratingcount || episode.ratingcount + 25 &gt; data.votes)) {
+        data.rating = Math.round(data.rating * 10);
+        data.ratingcount = data.votes;
+    } else {
+        delete data.rating;
+        delete data.ratingcount;
+    }
+    data.episodenumber = data.number;
+    data.episodename = (data.title == null) ? 'TBA' : data.title;
+    data.firstaired = new Date(data.first_aired).getTime();
+    data.firstaired_iso = data.first_aired;
+    data.filename = (('screenshot' in data.images) &amp;&amp; ('thumb' in data.images.screenshot)) ? data.images.screenshot.thumb : '';
+    if (data.firstaired === 0 || data.firstaired &gt; new Date().getTime()) {
+        // if the episode has not yet aired, make sure the download and watched status are zeroed. #491
+        data.downloaded = 0;
+        data.watched = 0;
+        data.watchedAt = null;
+    };
+
+    for (var i in data) {
+        if ((i in episode)) {
+            episode[i] = data[i];
+        }
+    }
+    episode.seasonnumber = season.seasonnumber;
+    // if there's an entry for the episode in watchedEpisodes, this is a backup restore
+    watched.map(function(el) {
+        if (el.TVDB_ID == episode.TVDB_ID) {
+            episode.downloaded = 1; // an entry means it has to have been downloaded
+            episode.watchedAt = el.watchedAt; // an entry may mean it's watched ... or not.
+            if (el.watchedAt != null) {
+                episode.watched = 1;
+            } else {
+                episode.watched = 0;
+            };
+        }
+    });
+    episode.ID_Serie = serie.getID();
+    episode.ID_Season = season.getID();
+    return episode;
+};</code></pre>
+          <div class="description"><p>Wipe episodes from the database that were cached locally but are no longer in the latest update.</p></div>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style="width:20%">Option name</th>
+                <th style="width:20%">Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>seasons Trakt.TV seasons/episodes input</p></td>
+              </tr>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>series serie entity</p></td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code class="language-javascript">cleanupEpisodes = function(seasons, serie) {
+    var tvdbList = [];
+    seasons.map(function(season) {
+        season.episodes.map(function(episode) {
+            if (isNaN(parseInt(episode.tvdb_id))) return;
+            tvdbList.push(episode.tvdb_id);
+        });
+    });
+
+    return CRUD.executeQuery('delete from Episodes where ID_Serie = ? and TVDB_ID NOT IN (' + tvdbList.join(',') + ')', [serie.ID_Serie]).then(function(result) {
+        if (result.rs.rowsAffected &gt; 0) {
+            console.info(&quot;Cleaned up &quot; + result.rs.rowsAffected + &quot; orphaned episodes for series [&quot; + serie.ID_Serie + &quot;] &quot; + serie.name);
+        };
+        return seasons;
+    });
+};</code></pre>
+          <div class="description"><p>Insert all seasons into the database and return a cached array map</p></div>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style="width:20%">Option name</th>
+                <th style="width:20%">Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CRUD.Entity</td>
+                <td></td>
+                <td><p>serie serie to update seasons for</p></td>
+              </tr>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>seasons extended seasons input data from Trakt</p></td>
+              </tr>
+              <tr>
+                <td>return</td>
+                <td></td>
+                <td><p>object seasonCache indexed by seasonnumber</p></td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code class="language-javascript">updateSeasons = function(serie, seasons) {
+    //console.debug(&quot;Update seasons!&quot;, seasons);
+    return serie.getSeasonsByNumber().then(function(seasonCache) { // fetch the seasons and cache them by number.
+        return Promise.all(seasons.map(function(season) {
+            var SE = (season.number in seasonCache) ? seasonCache[season.number] : new Season();
+            SE.poster = season.poster;
+            SE.seasonnumber = season.number;
+            SE.ID_Serie = serie.getID();
+            SE.overview = season.overview;
+            if (service.downloadRatings &amp;&amp; (!SE.ratingcount || SE.ratingcount + 25 &gt; season.votes)) {
+                SE.ratings = Math.round(season.rating * 10);
+                SE.ratingcount = season.votes;
+            }
+            seasonCache[season.number] = SE;
+            return SE.Persist().then(function() {
+                return true;
+            });
+        })).then(function() {
+            return seasonCache;
+        });
+    });
+};
+
+updateEpisodes = function(serie, seasons, watched, seasonCache) {
+    // console.debug(&quot; Update episodes!&quot;, serie, seasons, watched, seasonCache);
+    return serie.getEpisodesMap().then(function(episodeCache) {
+        return Promise.all(seasons.map(function(season) {
+            return Promise.all(season.episodes.map(function(episode) {
+                if (episode.tvdb_id == null) return;
+                var dbEpisode = (!(episode.tvdb_id in episodeCache)) ? new Episode() : episodeCache[episode.tvdb_id];
+                return fillEpisode(dbEpisode, episode, seasonCache[season.number], serie, watched).Persist().then(function() {
+                    episodeCache[episode.tvdb_id] = dbEpisode;
+                    return true;
+                });
+            })).then(function() {
+                return episodeCache;
+            });
+        }));
+    });
+};
+
+var service = {
+    initialized: false,
+    addingList: {}, // holds any TVDB_ID's that are adding, used for spinner/checkmark icon control
+    errorList: {}, // holds any TVDB_ID's that had an error, used for sadface icon control
+    favorites: [],
+    favoriteIDs: [],
+    downloadRatings: $injector.get('SettingsService').get('download.ratings'), // determines if Ratings are processed or discarded</code></pre>
+          <section id="addFavorite">
+            <h1>addFavorite</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>addFavorite()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Handles adding, deleting and updating a show to the local database.<br />Grabs the existing serie, seasons and episode from the database if they exist<br />and inserts or updates the information.<br />Deletes the episode from the database if TraktTV no longer has it.<br />Returns a promise that gets resolved when all the updates have been launched<br />(but not necessarily finished, they&#39;ll continue to run)</p></div>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style="width:20%">Option name</th>
+                <th style="width:20%">Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>data input data from TraktTV.findSerieByTVDBID(data.TVDB_ID)</p></td>
+              </tr>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>watched { TVDB_ID =&gt; watched episodes } mapped object to auto-mark as watched</p></td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code class="language-javascript">addFavorite: function(data, watched) {
+    watched = watched || [];
+    // console.debug(&quot;FavoritesService.addFavorite!&quot;, data, watched);
+    var entity = null;
+    if (data.title === null || data.tvdb_id === null) { // if odd invalid data comes back from trakt.tv, remove the whole serie from db.
+        console.error(&quot;received error data as input, removing from favorites.&quot;);
+        return service.remove({
+            name: data.title,
+            TVDB_ID: data.tvdb_id
+        });
+    }
+    var serie = service.getById(data.tvdb_id) || new Serie();
+    fillSerie(serie, data);
+    return serie.Persist().then(function() {
+            return serie;
+        }).then(function(serie) {
+            addToFavoritesList(serie); // cache serie in favoritesservice.favorites
+            $rootScope.$applyAsync();
+            entity = serie;
+            return cleanupEpisodes(data.seasons, entity);
+        })
+        .then(function() {
+            return updateSeasons(entity, data.seasons);
+        })
+        .then(function(seasonCache) {
+            return updateEpisodes(entity, data.seasons, watched, seasonCache);
+        })
+        .then(function(episodeCache) {
+            $injector.get('CalendarEvents').processEpisodes(serie, episodeCache);
+            //console.debug(&quot;FavoritesService.Favorites&quot;, service.favorites)
+            $rootScope.$applyAsync();
+            $rootScope.$broadcast('background:load', serie.fanart);
+            $rootScope.$broadcast('storage:update');
+            $rootScope.$broadcast('serie:recount:watched', serie.ID_Serie);
+            return entity;
+        });
+},</code></pre>
+          <section id="getEpisodes">
+            <h1>getEpisodes</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>getEpisodes()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Helper function to fetch all the episodes for a serie<br />Optionally, filters can be provided which will be turned into an SQL where.</p></div>
+          <pre><code class="language-javascript">getEpisodes: function(serie, filters) {
+    serie = serie instanceof CRUD.Entity ? serie : this.getById(serie);
+    return serie.Find('Episode', filters || {}).then(function(episodes) {
+        return episodes;
+    }, function(err) {
+        console.error(&quot;Error in getEpisodes&quot;, serie, filters || {});
+    });
+},
+waitForInitialization: function() {
+    return $q(function(resolve, reject) {
+        function waitForInitialize() {
+            if (service.initialized) {
+                resolve();
+            } else {
+                setTimeout(waitForInitialize, 50);
+            }
+        }
+        waitForInitialize();
+    });
+},
+getEpisodesForDateRange: function(start, end) {
+    return service.waitForInitialization().then(function() {
+        var filter = ['Episodes.firstaired &gt; &quot;' + start + '&quot; AND Episodes.firstaired &lt; &quot;' + end + '&quot; '];
+        return CRUD.Find('Episode', filter).then(function(ret) {
+            return ret;
+        });
+    });
+},</code></pre>
+          <section id="getById">
+            <h1>getById</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>getById()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Find a serie by it&#39;s TVDB_ID (the main identifier for series since they&#39;re consistent regardless of local config)</p></div>
+          <pre><code class="language-javascript">getById: function(id) {
+    return service.favorites.filter(function(el) {
+        return el.TVDB_ID == id;
+    })[0];
+},
+getByID_Serie: function(id) {
+    return service.favorites.filter(function(el) {
+        return el.ID_Serie == id;
+    })[0];
+},
+hasFavorite: function(id) {
+    return service.favoriteIDs.indexOf(id) &gt; -1;
+},</code></pre>
+          <section id="remove">
+            <h1>remove</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>remove()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Remove a serie, it&#39;s seasons, and it&#39;s episodes from the database.</p></div>
+          <pre><code class="language-javascript">remove: function(serie) {
+    serie.displaycalendar = '0';
+    //console.debug(&quot;Remove serie from favorites!&quot;, serie);
+    service.getById(serie.TVDB_ID).Find('Season').then(function(seasons) {
+        seasons.map(function(el) {
+            el.Delete();
+        });
+    });
+    CRUD.executeQuery('delete from Episodes where ID_Serie = ' + serie.ID_Serie);
+    service.favoriteIDs = service.favoriteIDs.filter(function(id) {
+        return id != serie.TVDB_ID;
+    });
+    serie.Delete().then(function() {
+        service.favorites = service.favorites.filter(function(el) {
+            return el.getID() != serie.getID();
+        });
+        console.info(&quot;Serie '&quot; + serie.name + &quot;' deleted. Syncing storage.&quot;);
+        $rootScope.$broadcast('storage:update');
+        if (service.favorites.length === 0) {
+            $rootScope.$broadcast('serieslist:empty');
+        }
+    });
+    service.clearAdding(serie.TVDB_ID);
+},
+refresh: function() {
+    return service.getSeries().then(function(results) {
+        service.favorites = results;
+        var ids = [];
+        results.map(function(el) {
+            ids.push(el.TVDB_ID.toString());
+        });
+        service.favoriteIDs = ids;
+        if (ids.length === 0) {
+            setTimeout(function() {
+                $rootScope.$broadcast('serieslist:empty');
+            }, 0);
+        }
+        return service.favorites;
+    });
+},</code></pre>
+          <section id="getSeries">
+            <h1>getSeries</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>getSeries()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Fetch all the series asynchronously and return them as POJO&#39;s<br />(Plain Old Javascript Objects)<br />Runs automatically when this factory is instantiated</p></div>
+          <pre><code class="language-javascript">getSeries: function() {
+    return CRUD.Find('Serie', ['name is not NULL']).then(function(results) {
+        results.map(function(el, idx) {
+            results[idx] = el;
+        });
+        return results;
+    });
+},</code></pre>
+          <section id="loadRandomBackground">
+            <h1>loadRandomBackground</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>loadRandomBackground()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Load a random background from the shows database<br />The BackgroundRotator service is listening for this event</p></div>
+          <pre><code class="language-javascript">loadRandomBackground: function() {
+    // dafuq. no RANDOM() in sqlite in chrome... 
+    // then we pick a random array item from the resultset based on the amount.
+    CRUD.executeQuery(&quot;select fanart from Series where fanart != ''&quot;).then(function(result) {
+        if (result.rs.rows.length &gt; 0) {
+            $rootScope.$broadcast('background:load', result.rs.rows.item(Math.floor(Math.random() * (result.rs.rows.length - 1))).fanart);
+        }
+    });
+},</code></pre>
+          <section id="adding">
+            <h1>adding</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>adding()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>set true the adding status for this series. used to indicate spinner icon required</p></div>
+          <pre><code class="language-javascript">adding: function(tvdb_id) {
+    if (!(tvdb_id in service.addingList)) {
+        service.addingList[tvdb_id] = true;
+        service.clearError(tvdb_id);
+    }
+},</code></pre>
+          <section id="added">
+            <h1>added</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>added()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>set false the adding status for this series. used to indicate checkmark icon required</p></div>
+          <pre><code class="language-javascript">added: function(tvdb_id) {
+    if (tvdb_id in service.addingList) service.addingList[tvdb_id] = false;
+},</code></pre>
+          <section id="flushAdding">
+            <h1>flushAdding</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>flushAdding()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>flush the adding and error status list</p></div>
+          <pre><code class="language-javascript">flushAdding: function() {
+    service.addingList = {};
+    service.errorList = {};
+},</code></pre>
+          <section id="isAdding">
+            <h1>isAdding</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>isAdding()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Returns true as long as the add a show to favorites promise is running.</p></div>
+          <pre><code class="language-javascript">isAdding: function(tvdb_id) {
+    if (tvdb_id === null) return false;
+    return ((tvdb_id in service.addingList) &amp;&amp; (service.addingList[tvdb_id] === true));
+},</code></pre>
+          <section id="isAdded">
+            <h1>isAdded</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>isAdded()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Used to show checkmarks in the add modes for series that you already have.</p></div>
+          <pre><code class="language-javascript">isAdded: function(tvdb_id) {
+    if (tvdb_id === null) return false;
+    return service.hasFavorite(tvdb_id.toString());
+},</code></pre>
+          <section id="clearAdding">
+            <h1>clearAdding</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>clearAdding()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>clear the adding status for this series. used to indicate spinner and checkmark are NOT required.</p></div>
+          <pre><code class="language-javascript">clearAdding: function(tvdb_id) {
+    if ((tvdb_id in service.addingList)) delete service.addingList[tvdb_id];
+},</code></pre>
+          <section id="addError">
+            <h1>addError</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>addError()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>add the error status for this series. used to indicate sadface icon is required.</p></div>
+          <pre><code class="language-javascript">addError: function(tvdb_id, error) {
+    service.errorList[tvdb_id] = error;
+},</code></pre>
+          <section id="isError">
+            <h1>isError</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>isError()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Used to show sadface icon in the add modes for series that you already have.</p></div>
+          <pre><code class="language-javascript">isError: function(tvdb_id) {
+    if (tvdb_id === null) return false;
+    return ((tvdb_id in service.errorList));
+},</code></pre>
+          <section id="clearError">
+            <h1>clearError</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>clearError()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>clear the error status for this series. used to indicate sadface icon is NOT required.</p></div>
+          <pre><code class="language-javascript">clearError: function(tvdb_id) {
+    if ((tvdb_id in service.errorList)) delete service.errorList[tvdb_id];
+}
+        };
+
+        return service;
+    }
+])
+
+.run(function(FavoritesService, $state, $rootScope) {
+
+    //console.log(&quot;Executing favoritesservice.run block&quot;);
+    $rootScope.$on('serieslist:empty', function() {
+        //console.log(&quot;Series list is empty!, going to add screen.&quot;);
+        setTimeout(function() {
+$state.go('favorites.add');
+        }, 500);
+    });
+
+    //console.log(&quot;Executing favoritesservice.refresh.&quot;);
+
+    FavoritesService.refresh().then(function(favorites) {
+        //console.log(&quot;Favoritesservice refreshed!&quot;);
+        FavoritesService.loadRandomBackground();
+        FavoritesService.initialized = true;
+    });
+});</code></pre>
+          <div class="footer site-footer">
+            <div class="span site-footer-owner"><a href="https://github.com/mr-doc/mr-doc-theme-cayman">Cayman</a> is maintained by <a href="https://github.com/iwatakeshi">iwatakeshi</a>.</div>
+            <div class="span site-footer-credits">This page was generated by <a href="https://github.com/mr-doc/mr-doc">Mr. Doc</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/affix.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/scrollspy.js"></script>
+    <script src="../js/prism.js"></script>
+    <script src="../js/prism-bash.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('body').scrollspy({
+          target: ".bs-docs-sidebar",
+          offset: 40
+        });
+        $('#sidebar').affix({
+          offset:{
+            bottom:60,
+            top: 60
+          }
+        }) 
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>DuckieTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/cayman.css">
+    <link rel="stylesheet" href="../../css/prism.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">DuckieTV</h1>
+      <h2 class="project-tagline">DuckieTV helps you manage your favorite TV Shows on a sweet calendar</h2><a href="https://npmjs.com/package/DuckieTV-Standalone" target="_blank" class="btn">View on npm</a>
+    </section>
+    <section data-spy="scroll" data-target=".scrollspy" class="main-content">
+      <div class="row">
+        <div class="col-md-3 col-xs-3 bs-docs-sidebar">
+          <ul id="sidebar" class="nav nav-stacked fixed">
+            <li><a href="../../index.html">Main</a></li>
+            <li><a href="../../CRUD.entities.js.html">CRUD.entities.js</a></li>
+            <li><a href="../../app.authHttpBackend.js.html">app.authHttpBackend.js</a></li>
+            <li><a href="../../app.js.html">app.js</a></li>
+            <li><a href="../../app.requestinterceptors.js.html">app.requestinterceptors.js</a></li>
+            <li><a href="../../app.routes.js.html">app.routes.js</a></li>
+            <li><a href="../../app.standalone.systray.js.html">app.standalone.systray.js</a></li>
+            <li><a href="../../app.standalone.update.js.html">app.standalone.update.js</a></li>
+            <li><a href="../../app.standalone.windowdressing.js.html">app.standalone.windowdressing.js</a></li>
+            <li><a href="../../app.standalone.zoom.js.html">app.standalone.zoom.js</a></li>
+            <li><a href="../../app.translate.js.html">app.translate.js</a></li>
+            <li><a href="../../background.js.html">background.js</a></li>
+            <li><a href="../../classes/RemoteAPI.js.html">classes/RemoteAPI.js</a></li>
+            <li><a href="../../controllers/ActionBarCtrl.js.html">controllers/ActionBarCtrl.js</a></li>
+            <li><a href="../../controllers/WatchlistCtrl.js.html">controllers/WatchlistCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/LocalSeriesCtrl.js.html">controllers/serieslist/LocalSeriesCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/SeriesListCtrl.js.html">controllers/serieslist/SeriesListCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/TraktTVSearchCtrl.js.html">controllers/serieslist/TraktTVSearchCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/TraktTVTrendingCtrl.js.html">controllers/serieslist/TraktTVTrendingCtrl.js</a></li>
+            <li><a href="../../controllers/settings/BackupCtrl.js.html">controllers/settings/BackupCtrl.js</a></li>
+            <li><a href="../../controllers/settings/CalendarCtrl.js.html">controllers/settings/CalendarCtrl.js</a></li>
+            <li><a href="../../controllers/settings/DisplayCtrl.js.html">controllers/settings/DisplayCtrl.js</a></li>
+            <li><a href="../../controllers/settings/LanguageCtrl.js.html">controllers/settings/LanguageCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SerieTorrentSettingsCtrl.js.html">controllers/settings/SerieTorrentSettingsCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SettingsTorrentCtrl.js.html">controllers/settings/SettingsTorrentCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SubtitlesCtrl.js.html">controllers/settings/SubtitlesCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SyncCtrl.js.html">controllers/settings/SyncCtrl.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Deluge.js.html">controllers/settings/TorrentClients/Deluge.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Tixati.js.html">controllers/settings/TorrentClients/Tixati.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Transmission.js.html">controllers/settings/TorrentClients/Transmission.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Vuze.js.html">controllers/settings/TorrentClients/Vuze.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/qBittorrent.js.html">controllers/settings/TorrentClients/qBittorrent.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/qBittorrent32plus.js.html">controllers/settings/TorrentClients/qBittorrent32plus.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/uTorrentWebUI.js.html">controllers/settings/TorrentClients/uTorrentWebUI.js</a></li>
+            <li><a href="../../controllers/settings/TraktTVCtrl.js.html">controllers/settings/TraktTVCtrl.js</a></li>
+            <li><a href="../../controllers/settings/customSearchEngineCtrl.js.html">controllers/settings/customSearchEngineCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/AboutCtrl.js.html">controllers/sidepanel/AboutCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SettingsCtrl.js.html">controllers/sidepanel/SettingsCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelEpisodeCtrl.js.html">controllers/sidepanel/SidepanelEpisodeCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelSeasonCtrl.js.html">controllers/sidepanel/SidepanelSeasonCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelSeasonsCtrl.js.html">controllers/sidepanel/SidepanelSeasonsCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelSerieCtrl.js.html">controllers/sidepanel/SidepanelSerieCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelTraktSerieCtrl.js.html">controllers/sidepanel/SidepanelTraktSerieCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/TorrentCtrl.js.html">controllers/sidepanel/TorrentCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/TorrentDetailsCtrl.js.html">controllers/sidepanel/TorrentDetailsCtrl.js</a></li>
+            <li><a href="../../directives/backgroundRotator.js.html">directives/backgroundRotator.js</a></li>
+            <li><a href="../../directives/calendar.js.html">directives/calendar.js</a></li>
+            <li><a href="../../directives/calendarEvent.js.html">directives/calendarEvent.js</a></li>
+            <li><a href="../../directives/chromeTopSites.js.html">directives/chromeTopSites.js</a></li>
+            <li><a href="../../directives/datePicker.js.html">directives/datePicker.js</a></li>
+            <li><a href="../../directives/episodeDownloaded.js.html">directives/episodeDownloaded.js</a></li>
+            <li><a href="../../directives/episodeWatched.js.html">directives/episodeWatched.js</a></li>
+            <li><a href="../../directives/fastSearch.js.html">directives/fastSearch.js</a></li>
+            <li><a href="../../directives/focusWatch.js.html">directives/focusWatch.js</a></li>
+            <li><a href="../../directives/lazyBackground.js.html">directives/lazyBackground.js</a></li>
+            <li><a href="../../directives/loadingSpinner.js.html">directives/loadingSpinner.js</a></li>
+            <li><a href="../../directives/mouseWheelDown.js.html">directives/mouseWheelDown.js</a></li>
+            <li><a href="../../directives/mouseWheelUp.js.html">directives/mouseWheelUp.js</a></li>
+            <li><a href="../../directives/queryMonitor.js.html">directives/queryMonitor.js</a></li>
+            <li><a href="../../directives/serieDetails.js.html">directives/serieDetails.js</a></li>
+            <li><a href="../../directives/serieheader.js.html">directives/serieheader.js</a></li>
+            <li><a href="../../directives/seriesList.js.html">directives/seriesList.js</a></li>
+            <li><a href="../../directives/sidePanel.js.html">directives/sidePanel.js</a></li>
+            <li><a href="../../directives/stopEvent.js.html">directives/stopEvent.js</a></li>
+            <li><a href="../../directives/subtitleDialog.js.html">directives/subtitleDialog.js</a></li>
+            <li><a href="../../directives/targetBlank.js.html">directives/targetBlank.js</a></li>
+            <li><a href="../../directives/torrentDialog.js.html">directives/torrentDialog.js</a></li>
+            <li><a href="../../directives/torrentRemoteControl.js.html">directives/torrentRemoteControl.js</a></li>
+            <li><a href="../../services/AutoDownloadService.js.html">services/AutoDownloadService.js</a></li>
+            <li><a href="../../services/BaseHTTPApi.js.html">services/BaseHTTPApi.js</a></li>
+            <li><a href="../../services/CalendarEvents.js.html">services/CalendarEvents.js</a></li>
+            <li><a href="../../services/ChromeStorageSyncTarget.js.html">services/ChromeStorageSyncTarget.js</a></li>
+            <li><a href="../../services/DuckieTorrent.js.html">services/DuckieTorrent.js</a></li>
+            <li><a href="../../services/EpisodeWatchedMonitor.js.html">services/EpisodeWatchedMonitor.js</a></li>
+            <li><a href="../../services/FavoritesService.js.html">services/FavoritesService.js</a></li>
+            <li><a href="../../services/FileReader.js.html">services/FileReader.js</a></li>
+            <li><a href="../../services/FormlyLoaderService.js.html">services/FormlyLoaderService.js</a></li>
+            <li><a href="../../services/GoogleImages.js.html">services/GoogleImages.js</a></li>
+            <li><a href="../../services/IMDB.js.html">services/IMDB.js</a></li>
+            <li><a href="../../services/MigrationService.js.html">services/MigrationService.js</a></li>
+            <li><a href="../../services/Netflix.js.html">services/Netflix.js</a></li>
+            <li><a href="../../services/NotificationService.js.html">services/NotificationService.js</a></li>
+            <li><a href="../../services/OpenSubtitles.js.html">services/OpenSubtitles.js</a></li>
+            <li><a href="../../services/PowderPlayer.js.html">services/PowderPlayer.js</a></li>
+            <li><a href="../../services/SceneNameResolver.js.html">services/SceneNameResolver.js</a></li>
+            <li><a href="../../services/SceneXemResolver.js.html">services/SceneXemResolver.js</a></li>
+            <li><a href="../../services/SettingsService.js.html">services/SettingsService.js</a></li>
+            <li><a href="../../services/StorageSyncService.js.html">services/StorageSyncService.js</a></li>
+            <li><a href="../../services/SyncManager.js.html">services/SyncManager.js</a></li>
+            <li><a href="../../services/TorrentClients/BaseTorrentClient.js.html">services/TorrentClients/BaseTorrentClient.js</a></li>
+            <li><a href="../../services/TorrentClients/Deluge.js.html">services/TorrentClients/Deluge.js</a></li>
+            <li><a href="../../services/TorrentClients/Tixati.js.html">services/TorrentClients/Tixati.js</a></li>
+            <li><a href="../../services/TorrentClients/TorrentData.js.html">services/TorrentClients/TorrentData.js</a></li>
+            <li><a href="../../services/TorrentClients/Transmission.js.html">services/TorrentClients/Transmission.js</a></li>
+            <li><a href="../../services/TorrentClients/Vuze.js.html">services/TorrentClients/Vuze.js</a></li>
+            <li><a href="../../services/TorrentClients/qBittorrent.js.html">services/TorrentClients/qBittorrent.js</a></li>
+            <li><a href="../../services/TorrentClients/qBittorrent32plus.js.html">services/TorrentClients/qBittorrent32plus.js</a></li>
+            <li class="active"><a href="../../services/TorrentClients/uTorrent.js.html">services/TorrentClients/uTorrent.js
+                <ul class="nav nav-stacked">
+                  <li><a href="#endpoints"><i class="alert alert-success"></i><span>endpoints</span></a>
+                  </li>
+                  <li><a href="#parsers"><i class="alert alert-success"></i><span>parsers</span></a>
+                  </li>
+                  <li><a href="#getParser"><i class="alert alert-info"></i><span>getParser</span></a>
+                  </li>
+                  <li><a href="#getUrl"><i class="alert alert-info"></i><span>getUrl</span></a>
+                  </li>
+                  <li><a href="#jsonp"><i class="alert alert-info"></i><span>jsonp</span></a>
+                  </li>
+                  <li><a href="#portScan"><i class="alert alert-info"></i><span>portScan</span></a>
+                  </li>
+                  <li><a href="#pair"><i class="alert alert-info"></i><span>pair</span></a>
+                  </li>
+                  <li><a href="#connect"><i class="alert alert-info"></i><span>connect</span></a>
+                  </li>
+                  <li><a href="#statusQuery"><i class="alert alert-info"></i><span>statusQuery</span></a>
+                  </li>
+                  <li><a href="#getRemote"><i class="alert alert-info"></i><span>getRemote</span></a>
+                  </li>
+                  <li><a href="#RPC"><i class="alert alert-info"></i><span>RPC</span></a>
+                  </li>
+                  <li><a href="#attachEvents"><i class="alert alert-info"></i><span>attachEvents</span></a>
+                  </li>
+                  <li><a href="#Scan"><i class="alert alert-info"></i><span>Scan</span></a>
+                  </li>
+                  <li><a href="#AutoConnect"><i class="alert alert-info"></i><span>AutoConnect</span></a>
+                  </li>
+                  <li><a href="#waitForInitialisation"><i class="alert alert-info"></i><span>waitForInitialisation</span></a>
+                  </li>
+                  <li><a href="#Pair"><i class="alert alert-info"></i><span>Pair</span></a>
+                  </li>
+                  <li><a href="#Update"><i class="alert alert-info"></i><span>Update</span></a>
+                  </li>
+                  <li><a href="#RPCObject"><i class="alert alert-info"></i><span>RPCObject</span></a>
+                  </li>
+                  <li><a href="#getFormattedStatus"><i class="alert alert-info"></i><span>getFormattedStatus</span></a>
+                  </li>
+                </ul></a></li>
+            <li><a href="../../services/TorrentClients/uTorrentWebUI.js.html">services/TorrentClients/uTorrentWebUI.js</a></li>
+            <li><a href="../../services/TorrentFreak.js.html">services/TorrentFreak.js</a></li>
+            <li><a href="../../services/TorrentHashListService.js.html">services/TorrentHashListService.js</a></li>
+            <li><a href="../../services/TorrentMonitor.js.html">services/TorrentMonitor.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/GenericTorrentSearchEngine.js.html">services/TorrentSearchEngines/GenericTorrentSearchEngine.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Kickass.js.html">services/TorrentSearchEngines/Kickass.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/KickassMirrorResolver.js.html">services/TorrentSearchEngines/KickassMirrorResolver.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Nyaa.js.html">services/TorrentSearchEngines/Nyaa.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/RarBG.js.html">services/TorrentSearchEngines/RarBG.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/ShowRSS.js.html">services/TorrentSearchEngines/ShowRSS.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Strike.js.html">services/TorrentSearchEngines/Strike.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/ThePirateBay.js.html">services/TorrentSearchEngines/ThePirateBay.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/ThePirateBayMirrorResolver.js.html">services/TorrentSearchEngines/ThePirateBayMirrorResolver.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/TorrentSearchEngines.js.html">services/TorrentSearchEngines/TorrentSearchEngines.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Torrentz.eu.js.html">services/TorrentSearchEngines/Torrentz.eu.js</a></li>
+            <li><a href="../../services/TraktTVStorageSyncTarget.js.html">services/TraktTVStorageSyncTarget.js</a></li>
+            <li><a href="../../services/TraktTVTrending.js.html">services/TraktTVTrending.js</a></li>
+            <li><a href="../../services/TraktTVUpdateService.js.html">services/TraktTVUpdateService.js</a></li>
+            <li><a href="../../services/TraktTVv2.js.html">services/TraktTVv2.js</a></li>
+            <li><a href="../../services/UpgradeNotificationService.js.html">services/UpgradeNotificationService.js</a></li>
+            <li><a href="../../services/WatchlistCheckerService.js.html">services/WatchlistCheckerService.js</a></li>
+            <li><a href="../../services/WatchlistService.js.html">services/WatchlistService.js</a></li>
+            <li><a href="../../utility.js.html">utility.js</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div class="description"><p>DuckieTorrent Utorrent (v3.3+)/ Bittorrent interface<br />Inspired by and reverse-engineered from Bittorrent&#39;s Torque labs btapp.js</p><p><a href="https://github.com/bittorrenttorque">https://github.com/bittorrenttorque</a><br /><a href="https://github.com/bittorrenttorque/btapp">https://github.com/bittorrenttorque/btapp</a><br /><a href="https://github.com/bittorrenttorque/visualizer">https://github.com/bittorrenttorque/visualizer</a></p><p>This project was started because I have an angular.js app and I do not want the<br />dependencies to Torque, Backbone, Lodash, etc that btapp.js has. This should be a service with<br />a completely separated GUI, which it is now.</p><p>The Utorrent/Bittorrent clients listen on one of 20 ports on localhost to allow other apps to connect<br />to them.<br />Discovery is done by performing a /version request to these ports until the first hit<br />After that, an authentication token is requested on the client (you need to save this somewhere, the demo does so in localStorage)<br />With the token you can get a session ID, and with the session ID you can start polling for data. Don&#39;t poll and the session will expire<br />and you will need to fetch a new session ID with the token.</p><p>Polling for data results in a tree structure of RPC functions and object data<br />The RPC structures are matched against regexes and the parameters are type-checked.<br />Passing the wrong data into a callback will crash uTorrent/BitTorrent violently (Which could be an attack angle for security researchers)</p><p>Since the amount of data that&#39;s returned from the torrent application to the browser can be quite large, multiple requests will build up your<br />local state (stored in the uTorrentRemote service)</p></div>
+          <pre><code class="language-javascript">.provider('uTorrent', function() {</code></pre>
+          <section id="endpoints">
+            <h1>endpoints</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type">property</div><span>&nbsp;</span><span>this.endpoints</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Predefined endpoints for API actions.</p></div>
+          <pre><code class="language-javascript">this.endpoints = {
+    pair: 'http://localhost:%s/gui/pair',
+    version: 'http://localhost:%s/version/',
+    ping: 'http://localhost:%s/gui/pingimg',
+    api: 'http://localhost:%s/btapp/',
+};</code></pre>
+          <section id="parsers">
+            <h1>parsers</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type">property</div><span>&nbsp;</span><span>this.parsers</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>If a specialized parser is needed for a response than it can be automatically picked up by adding the type and a parser<br />function here.</p></div>
+          <pre><code class="language-javascript">this.parsers = {
+
+};</code></pre>
+          <section id="getParser">
+            <h1>getParser</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>this.getParser()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Automated parser for responses for usage when neccesary</p></div>
+          <pre><code class="language-javascript">this.getParser = function(type) {
+    return (type in this.parsers) ? this.parsers[type] : function(data) {
+        return data.data;
+    };
+};</code></pre>
+          <section id="getUrl">
+            <h1>getUrl</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>this.getUrl()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Fetches the url, auto-replaces the port in the url if it was found.</p></div>
+          <pre><code class="language-javascript">this.getUrl = function(type, param) {
+    var out = this.endpoints[type];
+    if (this.port != null) {
+        out = out.replace('%s', this.port);
+    }
+    return out.replace('%s', encodeURIComponent(param));
+};
+
+this.currentPort = 0;
+this.port = null;
+this.sessionKey = null;
+this.authToken = null;
+this.isPolling = false;
+this.isConnecting = false;
+this.connected = false;
+this.initialized = false;
+
+this.$get = [&quot;$rootScope&quot;, &quot;$q&quot;, &quot;$http&quot;, &quot;URLBuilder&quot;, &quot;$parse&quot;, &quot;uTorrentRemote&quot;,
+    function($rootScope, $q, $http, URLBuilder, $parse, uTorrentRemote) {
+        var self = this;</code></pre>
+          <section id="jsonp">
+            <h1>jsonp</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>&nbsp;</span><span>jsonp()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Build a JSONP request using the URLBuilder service.<br />Automagically adds the JSON_CALLBACK option and executes the built in parser, or returns the result</p></div>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style="width:20%">Option name</th>
+                <th style="width:20%">Type</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>string</td>
+                <td></td>
+                <td><p>type url to fetch from the request types</p></td>
+              </tr>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>params GET parameters</p></td>
+              </tr>
+              <tr>
+                <td>object</td>
+                <td></td>
+                <td><p>options $http optional options</p></td>
+              </tr>
+            </tbody>
+          </table>
+          <pre><code class="language-javascript">var jsonp = function(type, params, options) {
+    var d = $q.defer();
+    params = angular.extend(params || {}, {
+        callback: 'JSON_CALLBACK'
+    });
+    var url = URLBuilder.build(self.getUrl(type), params);
+    var parser = self.getParser(type);
+    $http.jsonp(url, options || {}).then(function(response) {
+        d.resolve(parser ? parser(response) : response.data);
+    }, function(err) {
+        d.reject(err);
+    });
+    return d.promise;
+};
+
+var methods = {
+    getName: function() {
+        return 'uTorrent';
+    },</code></pre>
+          <section id="portScan">
+            <h1>portScan</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>portScan()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Execute a portscan on one of the 20 ports that were generated with the algorthm, stop scanning when a response is found.<br />Sets the found port index in self.currentPort;</p></div>
+          <pre><code class="language-javascript">portScan: function(ports) {
+    var d = $q.defer();
+
+    var nextPort = function() {
+        self.port = ports[self.currentPort];
+        jsonp('version').then(function(result) {
+            if (typeof result === 'undefined') {
+                d.reject(&quot;no torrent client listening on port &quot; + self.port);
+            }
+            d.resolve({
+                port: ports[self.currentPort],
+                version: result
+            });
+        }, function(err) {
+            if (self.currentPort &lt; 20) {
+                self.currentPort++;
+                nextPort();
+            } else {
+                d.reject(&quot;No active uTorrent/BitTorrent client found!&quot;);
+            }
+        });
+    };
+    nextPort();
+    return d.promise;
+},
+setPort: function(port) {
+    self.port = port;
+},</code></pre>
+          <section id="pair">
+            <h1>pair</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>pair()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Execute a torrent client pair request, and give the user 60 seconds to respond.</p></div>
+          <pre><code class="language-javascript">pair: function() {
+    return jsonp('pair', {
+        name: 'DuckieTV'
+    }, {
+        timeout: 60000
+    });
+},</code></pre>
+          <section id="connect">
+            <h1>connect</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>connect()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Once you&#39;ve fetched an authentication token, call this function with it to establish a connection.<br />Note : The connection needs to be kept open by polling or the session will time out.</p></div>
+          <pre><code class="language-javascript">connect: function(authToken) {
+    if (self.connected) {
+        var p = $q.defer();
+        p.resolve(function() {
+            return {
+                session: self.sessionKey,
+                authToken: self.authToken
+            };
+        });
+        return p.promise;
+    }
+    return jsonp('api', {
+        pairing: authToken,
+        type: 'state',
+        queries: '[[&quot;btapp&quot;]]',
+        hostname: window.location.host
+    }).then(function(session) {
+        console.info(&quot;Retreived session key!&quot;, session);
+        self.sessionKey = session.session;
+        self.authToken = authToken;
+        self.connected = true;
+        $rootScope.$broadcast('torrentclient:connected', methods.getRemote());
+        return session;
+    }, function(fail) {
+        console.error(&quot;Error starting session with auth token %s!&quot;, authToken);
+    });
+},</code></pre>
+          <section id="statusQuery">
+            <h1>statusQuery</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>statusQuery()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Execute and handle the api&#39;s &#39;update&#39; query.<br />Parses out the events, updates, properties and methods and dispatches them to the uTorrentRemote interface<br />for storage, handling and attaching RPC methods.</p></div>
+          <pre><code class="language-javascript">statusQuery: function() {
+    return jsonp('api', {
+        pairing: self.authToken,
+        session: self.sessionKey,
+        type: 'update',
+        hostname: window.location.host
+    }).then(function(data) {
+        if (data == &quot;invalid request&quot;) {
+            throw &quot;unauthorized&quot;;
+        }
+        if ('error' in data) {
+            return {
+                error: data
+            };
+        }
+        data.map(function(el) {
+            var type = Object.keys(el)[0];
+            var category = Object.keys(el[type].btapp)[0];
+            var data;
+            if (typeof el[type].btapp[category] == 'string') {
+                category = 'btappMethods';
+                data = el[type].btapp;
+            } else {
+                data = 'all' in el[type].btapp[category] &amp;&amp; !('set' in el[type].btapp[category]) ? el[type].btapp[category].all : el[type].btapp[category];
+                if (!('all' in el[type].btapp[category]) || 'set' in el[type].btapp[category]) category += 'Methods';
+            }
+            //console.log(&quot;Handle remote&quot;, el, type, category, data);
+            uTorrentRemote.handleEvent(type, category, data, methods.RPC);
+        });
+        return data;
+    }, function(error) {
+        console.error(&quot;Error executing get status query!&quot;, error);
+    });
+},</code></pre>
+          <section id="getRemote">
+            <h1>getRemote</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>getRemote()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Return the interface that handles the remote data.</p></div>
+          <pre><code class="language-javascript">getRemote: function() {
+    return uTorrentRemote;
+},</code></pre>
+          <section id="RPC">
+            <h1>RPC</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>RPC()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Execute a remote procedure function.<br />This function is passed all the way from here to the actual RPCObject&#39;s function.</p></div>
+          <pre><code class="language-javascript">RPC: function(path, args) {
+    p = path.split('.');
+    if (!args) args = [];
+    return jsonp('api', {
+        pairing: self.authToken,
+        session: self.sessionKey,
+        type: 'function',
+        path: [p],
+        'args': JSON.stringify(args),
+        hostname: window.location.host
+    });
+},</code></pre>
+          <section id="attachEvents">
+            <h1>attachEvents</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>attachEvents()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Todo: listen for these events</p></div>
+          <pre><code class="language-javascript">attachEvents: function() {</code></pre>
+          <div class="description"><p>{ &quot;add&quot;: { &quot;btapp&quot;: { &quot;events&quot;: { &quot;all&quot;: { &quot;<br />                    path:[&quot;btapp&quot;,&quot;events&quot;,&quot;set&quot;]<br />                    args:[&quot;appDownloadProgress&quot;,&quot;bt_05321785204295053489&quot;]<br />                    path:[&quot;btapp&quot;,&quot;events&quot;,&quot;set&quot;]<br />                    args:[&quot;appMessage&quot;,&quot;bt_56894816204235029082&quot;]<br />                    path:[&quot;btapp&quot;,&quot;events&quot;,&quot;set&quot;]<br />                    args:[&quot;appStopping&quot;,&quot;bt_78413389069652724491&quot;]<br />                    path:[&quot;btapp&quot;,&quot;events&quot;,&quot;set&quot;]<br />                    args:[&quot;appUninstall&quot;,&quot;bt_61359101496962791011&quot;]</p></div>
+          <pre><code class="language-javascript">},</code></pre>
+          <section id="Scan">
+            <h1>Scan</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Scan()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Execute a portscan on any of the 20 ports that are generated by the get_port api until one works.<br />If it works, store it in uTorrent.port</p></div>
+          <pre><code class="language-javascript">Scan: function() {
+    var p = $q.defer();
+    var ports = [];
+    for (var i = 0; i &lt; 20; i++) {
+        ports.push(7 * Math.pow(i, 3) + 3 * Math.pow(i, 2) + 5 * i + 10000);
+    }
+    methods.portScan(ports).then(function(result) {
+        console.info(&quot;Ping result on port&quot;, result);
+        localStorage.setItem('utorrent.port', result.port);
+        methods.setPort(result.port);
+        p.resolve(result.port);
+    }, function(err) {
+        console.warn('Could not connect to one of the ports!');
+    });
+    return p.promise;
+},</code></pre>
+          <section id="AutoConnect">
+            <h1>AutoConnect</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>AutoConnect()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Connect with an auth token obtained by the Pair function.<br />Store the resulting session key in $scope.session<br />You can call this method as often as you want. It&#39;ll return a promise that holds<br />off on resolving until the client is connected.<br />If it&#39;s connected and initialized, a promise will return that immediately resolves with the remote interface.</p></div>
+          <pre><code class="language-javascript">AutoConnect: function() {
+    if (!self.isConnecting &amp;&amp; !self.connected) {
+        self.connectPromise = $q.defer();
+        self.isConnecting = true;
+    } else {
+        return (!self.connected || !self.initialized) ? self.connectPromise.promise : $q(function(resolve) {
+            resolve(methods.getRemote());
+        });
+    }</code></pre>
+          <section id="waitForInitialisation">
+            <h1>waitForInitialisation</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>&nbsp;</span><span>waitForInitialisation()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>A little promise-settimeout loop to wait for uTorrent to finish flushing all it&#39;s torrent data<br />The once we&#39;re connected</p></div>
+          <pre><code class="language-javascript">var waitForInitialisation = function() {
+    if (!self.initPromise) {
+        self.initPromise = $q.defer();
+    }
+
+    if (self.connected &amp;&amp; self.initialized) {
+        self.initPromise.resolve(true);
+        return;
+    }
+
+    if (!self.connected || !self.initialized) {
+        setTimeout(waitForInitialisation, 50);
+    }
+
+    return self.initPromise.promise;
+}
+
+var connectFunc = function() {
+    methods.connect(localStorage.getItem('utorrent.token')).then(function(result) {
+        if (!self.isPolling) {
+            self.isPolling = true;
+            methods.Update();
+        }
+        self.isConnecting = false;
+        waitForInitialisation().then(function() {
+            self.connectPromise.resolve(methods.getRemote());
+        })
+    });
+}
+
+if (!localStorage.getItem('utorrent.preventconnecting') &amp;&amp; !localStorage.getItem('utorrent.token')) {
+    methods.Scan().then(function() {
+        methods.Pair().then(connectFunc, function(error) {
+            if (error == &quot;PAIR_DENIED&quot; &amp;&amp; confirm(&quot;You denied the uTorrent/BitTorrent Client request. \r\nDo you wish to prevent any future connection attempt?&quot;)) {
+                localStorage.setItem('utorrent.preventconnecting', true);
+            }
+        });
+    });
+} else {
+    if (!localStorage.getItem('utorrent.preventconnecting')) {
+        methods.Scan().then(connectFunc);
+    }
+}
+
+return self.connectPromise.promise;
+                },</code></pre>
+          <section id="Pair">
+            <h1>Pair</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Pair()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Execute a pair promise against utorrent<br />It waits 30 seconds for the promise to timeout.<br />When it works, it stores the returned auth token for connecting with the Connect function</p></div>
+          <pre><code class="language-javascript">Pair: function() {
+    return methods.pair().then(function(result) {
+        console.log(&quot;Received auth token!&quot;, result);
+        var key = typeof result == 'object' ? result.pairing_key : result; // switch between 3.3.x and 3.4.1 build 31206 pairing method
+        if (key == '&lt;NULL&gt;') {
+            throw &quot;PAIR_DENIED&quot;;
+        } else {
+            localStorage.setItem('utorrent.token', key);
+            self.authToken = result; // .pairing_key;
+        }
+    }, function(err) {
+        console.error(&quot;Eror pairing!&quot;, err);
+    });
+},
+togglePolling: function() {
+    self.isPolling = !self.isPolling;
+    self.Update();
+},</code></pre>
+          <section id="Update">
+            <h1>Update</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>Update()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Start the status update polling.<br />Stores the resulting TorrentClient service in $scope.rpc<br />Starts polling every 1s.</p></div>
+          <pre><code class="language-javascript">Update: function(dontLoop) {
+    if (self.isPolling === true) {
+        return methods.statusQuery().then(function(data) {
+            if (data.length === 0) {
+                self.initialized = true;
+            }
+            if (undefined === dontLoop &amp;&amp; self.isPolling &amp;&amp; !data.error) {
+                setTimeout(methods.Update, data &amp;&amp; data.length === 0 ? 3000 : 0); // burst when more data comes in, delay when things ease up.
+            }
+            return data;
+        });
+    }
+},
+isConnected: function() {
+    return self.connected;
+},
+Disconnect: function() {
+    self.isPolling = false;
+    uTorrentRemote.torrents = {};
+    uTorrentRemote.eventHandlers = {};
+},
+addMagnet: function(hash) {
+    uTorrentRemote.add.torrent(hash);
+},
+addTorrentByUpload: function() {
+    throw &quot;Upload Torrent Not implemented in uTorrent remote.&quot;;
+},
+
+addTorrentByUrl: function(hash, name) {
+    return uTorrentRemote.add.torrent(hash).then(function() {
+        return methods.Update(true);
+    }).then(function() {
+        return $q(function(resolve) {
+            setTimeout(function() {
+                var matches = Object.keys(uTorrentRemote.torrents).filter(function(key) {
+                    return uTorrentRemote.torrents[key].properties.all.name == name;
+                });
+                if (matches.length &gt; 0) {
+                    resolve(matches[0]);
+                }
+            }, 5000);
+        });
+    });
+}
+            };
+            return methods;
+        }
+    ];
+})</code></pre>
+          <div class="description"><p>Some RPC Call validation methods taken mostly directly from btapp.js<br />Converted to plain angular / javascript to keep this dependency-free</p></div>
+          <pre><code class="language-javascript">.factory('RPCCallService', function() {
+    var service = {
+        // Seeing as we're interfacing with a strongly typed language c/c++ we need to
+        // ensure that our types are at least close enough to coherse into the desired types
+        // takes something along the lines of &quot;[native function](string,unknown)(string)&quot;.
+        validateArguments: function(functionValue, variables) {
+            if (typeof functionValue !== 'string') {
+                console.error(&quot;Expected functionValue to be a string&quot;, functionValue, typeof functionValue, variables);
+                return false;
+            }
+            var signatures = functionValue.match(/\(.*?\)/g);
+            return signatures.filter(function(signature) {
+                signature = signature.match(/\w+/g) || []; //[&quot;string&quot;,&quot;unknown&quot;]
+                return signature.length === variables.length &amp;&amp; signature.map(function(type, index) {
+                    if (typeof variables[index] === 'undefined') {
+                        throw 'client functions do not support undefined arguments';
+                    } else if (typeof variables[index] === 'null') {
+                        return true;
+                    }
+
+                    switch (type) {
+                        //Most of these types that the client sends up match the typeof values of the javascript
+                        //types themselves so we can do a direct comparison
+                        case 'number':
+                        case 'string':
+                        case 'boolean':
+                            return typeof variables[index] === type;
+                            //In the case of unknown, we have no choice but to trust the argument as
+                            //the client hasn't specified what type it should be
+                        case 'unknown':
+                            return true;
+                        case 'array':
+                            return typeof variables[index] === 'object';
+                        case 'dispatch':
+                            return typeof variables[index] === 'object' || typeof variables[index] === 'function';
+                        default:
+                            //has the client provided a type that we weren't expecting?
+                            throw 'there is an invalid type in the function signature exposed by the client';
+                    }
+                });
+            });
+        },
+        convertCallbackFunctionArgs: function(args) {
+            args.map(function(value, key) {
+                // We are responsible for converting functions to variable names...
+                // this will be called later via a event with a callback and arguments variables
+                if (typeof value === 'function') {
+                    args[key] = service.storeCallbackFunction(value);
+                } else if (typeof value === 'object' &amp;&amp; value) {
+                    service.convertCallbackFunctionArgs(value);
+                }
+            }, this);
+        },
+        // We can't send function pointers to the torrent client server, so we'll send
+        // the name of the callback, and the server can call this by sending an event with
+        // the name and args back to us. We're responsible for making the call to the function
+        // when we detect this. This is the same way that jquery handles ajax callbacks.
+        storeCallbackFunction: function(cb) {
+            //console.log(&quot;Create a callback function for &quot;, cb);
+            cb = cb || function() {};
+            var str = 'bt_' + new Date().getTime();
+            this.btappCallbacks[str] = cb;
+            return str;
+        },
+        call: function(path, signature, args, rpcTarget) {
+            //console.log(&quot;Trying to call RPC function: &quot;, path, signature, args);
+            // This is as close to a static class function as you can get in javascript i guess
+            // we should be able to use verifySignaturesArguments to determine if the client will
+            // consider the arguments that we're passing to be valid
+            if (!service.validateArguments.call(service, signature, args)) {
+                console.error(&quot;Arguments do not match signature!&quot;, args, signature, path);
+                throw 'arguments do not match any of the function signatures exposed by the client';
+            }
+            service.convertCallbackFunctionArgs(args);
+            //console.log(&quot;Calling RPC Function!&quot;, path, signature, args, rpcTarget);
+            return rpcTarget(path, args);
+        }
+    };
+
+    return service;
+})</code></pre>
+          <div class="description"><p>uTorrent/Bittorrent remote singleton that receives the incoming data</p></div>
+          <pre><code class="language-javascript">.factory('uTorrentRemote', [&quot;$parse&quot;, &quot;$rootScope&quot;, &quot;RPCCallService&quot;,
+    function($parse, $rootScope, RPCCallService) {</code></pre>
+          <section id="RPCObject">
+            <h1>RPCObject</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>&nbsp;</span><span>RPCObject()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>RPC Object that wraps the remote data that comes in from uTorrent.<br />It stores all regular properties on itself<br />and makes sure that the remote function signatures are verified (using some code borrowed from the original btapp.js)<br />and a dispatching function with the matching signature is created and mapped to the RPCCallService<br />(to keep the overhead of creating many rpc call functions as low as possible)</p></div>
+          <pre><code class="language-javascript">var RPCObject = function(path, data, RPCProxy) {
+    var callbacks = {};
+
+    for (var property in data) {
+        this[property] = this.isRPCFunctionSignature(data[property]) ? this.createFunction(path, property, data[property], RPCProxy) : data[property];
+    }
+};
+
+RPCObject.prototype = {</code></pre>
+          <section id="getFormattedStatus">
+            <h1>getFormattedStatus</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>getFormattedStatus()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Return a human-readable status for a torrent</p></div>
+          <pre><code class="language-javascript">getFormattedStatus: function() {
+    var statuses = {
+        128: 'stopped',
+        136: 'stopped',
+        137: 'started',
+        152: 'Error: Files missing, please recheck',
+        198: 'Connecting to peers',
+        200: 'started',
+        201: 'downloading',
+        233: 'paused'
+    };
+    if (!(this.properties.all.status in statuses)) {
+        console.warn(&quot;There's an unknown status for this torrent!&quot;, this.properties.all.status, this);
+        return this.properties.all.status;
+    }
+    return statuses[this.properties.all.status];
+},
+getName: function() {
+    return $parse('properties.all.name')(this);
+},
+getStarted: function() {
+    return $parse('properties.all.added_on')(this);
+},
+getProgress: function() {
+    var pr = $parse('properties.all.progress')(this);
+    return pr ? pr / 10 : pr;
+},
+getStatusCode: function() {
+    return this.properties.all.status;
+},
+getFiles: function() {
+    var files = [];
+    angular.forEach($parse('file.all')(this), function(el, key) {
+        files.push(el);
+    });
+    angular.forEach($parse('files.all')(this), function(el, key) {
+        files.push(el);
+    });
+    return new Promise(function(resolve) {
+        resolve(files);
+    });
+},
+/**
+ * The torrent is started if the status is uneven.
+ */
+isStarted: function() {
+    return this.properties.all.status % 2 === 1;
+},
+// We expect function signatures that come from the client to have a specific syntax
+isRPCFunctionSignature: function(f) {
+    return typeof f === 'string' &amp;&amp; (f.match(/\[native function\](\([^\)]*\))+/) || f.match(/\[nf\](\([^\)]*\))+/));
+},
+createFunction: function(path, func, signature, RPCProxy) {
+    path = 'btapp.' + path + '.' + func;
+    var func = function() {
+        var i, args = [];
+        for (i = 0; i &lt; arguments.length; i++) {
+            args.push(arguments[i]);
+        }
+        return RPCCallService.call(path, signature, args, RPCProxy);
+    };
+    func.valueOf = function() {
+        return 'function' + signatures.substring(4) + ' (returns promise)';
+    };
+    return func;
+}
+        };
+
+
+        var hookMethods = {
+addEvents: function(data) {
+    //console.info(&quot;Add events!&quot;, data);
+},
+addRss: function(data) {
+    // console.log(&quot;Add RSS!&quot;, data);
+},
+addTrackerMethods: function(data) {
+    // console.log(&quot;Add Tracker Methods!&quot;, data);
+},
+addRsaMethods: function(data) {
+    // console.log(&quot;Add RSA Methods!&quot;, data);
+},
+addStash: function(data) {
+    // console.log(&quot;Add stash!&quot;, data);
+},
+addStashMethods: function(data) {
+    // console.log(&quot;Add stash methods!&quot;, data);
+},
+addEventsMethods: function(data, RPCObject) {
+    // console.log(&quot;Add Events methods!&quot;, data, RPCObject)
+},
+addRssMethods: function(data, rpc) {
+    // console.log(&quot;Add RSS Methods: &quot;, data);
+},
+addBtappMethods: function(data, rpc) {
+    // console.log(&quot;Add BTAPP Methods: &quot;, data);
+    service.btapp = new RPCObject('btapp', data, rpc);
+},
+addOsMethods: function(data, rpc) {
+    service.os = new RPCObject('os', data, rpc);
+
+    // console.log(&quot;Add OS Methods: &quot;, data);
+},
+addAddMethods: function(data, rpc) {
+    service.add = new RPCObject('add', data, rpc);
+    // console.log(&quot;Add Add Methods: &quot;, data);
+},
+addDhtMethods: function(data) {
+    // console.log(&quot;Add DHT Methods: &quot;, data);
+},
+addTorrentMethods: function(data, rpc) {
+    service.torrent = new RPCObject('torrent', data, rpc);
+    // console.log(&quot;Add Torrent Methods!&quot;, data);
+},
+addStream: function(data) {
+    // console.log(&quot;Add stream!&quot;, data);
+},
+addSettings: function(data, rpc) {
+    //console.log(&quot;Add Settings!&quot;, data, rpc);
+},
+addSettingsMethods: function(data, rpc) {
+    //console.log(&quot;Add Settings methods!&quot;, data, rpc, a, b, c);
+    service.settings = new RPCObject('settings', data, rpc);
+},
+removeTorrent: function(torrent) {
+    service.torrents[torrent.hash] = null;
+    delete service.torrents[torrent.hash];
+    delete service.eventHandlers[torrent.hash];
+},
+/**
+ * Incoming torrent detail data, add it to the local cached list
+ */
+addTorrent: function(data, RPCProxy) {
+    var key = Object.keys(data)[0];
+    if (key in service.torrents) {
+        Object.deepMerge(service.torrents[key], data[key]);
+    } else {
+        service.torrents[key] = new RPCObject('torrent.all.' + key, data[key], RPCProxy);
+        // //console.log(&quot;Add torrent!&quot;, key, this.getTorrentName(data[key]), this.torrents[key], data);
+    }
+    if (key in service.eventHandlers) {
+        service.eventHandlers[key].map(function(monitorFunc) {
+            monitorFunc(service.torrents[key]);
+        });
+    }
+    $rootScope.$broadcast('torrent:update:' + key, service.torrents[key]);
+    $rootScope.$broadcast('torrent:update:', service.torrents[key]);
+
+},
+        };
+
+
+        var service = {
+torrents: {},
+settings: {},
+offEvents: {},
+eventHandlers: {},
+
+getNameFunc: null,
+
+getTorrentName: function(torrent) {
+    if (!service.getNameFunc) {
+        service.getNameFunc = $parse('properties.all.name');
+    }
+    return (service.getNameFunc(torrent));
+},
+
+getTorrents: function() {
+    var out = [];
+    angular.forEach(service.torrents, function(el) {
+        out.push(el);
+    });
+    return out;
+},
+getByHash: function(hash) {
+    return (hash in service.torrents) ? service.torrents[hash] : null;
+},
+
+
+onTorrentUpdate: function(hash, callback) {
+    var key = 'torrent:update:' + hash;
+    if (!(key in service.offEvents)) {
+        service.offEvents[key] = [];
+    }
+    service.offEvents[key].push($rootScope.$on(key, function(evt, torrent) {
+        callback(torrent);
+    }));
+},
+
+
+offTorrentUpdate: function(hash, callback) {
+    var key = 'torrent:update:' + hash;
+    if ((key in service.offEvents)) {
+        service.offEvents[key].map(function(dereg) {
+            dereg();
+        });
+    }
+},
+handleEvent: function(type, category, data, RPCProxy, input) {
+    var func = type + String.capitalize(category);
+    if (!(func in hookMethods)) {
+        console.error(&quot;Method not implemented: &quot;, func, data);
+    } else {
+        hookMethods[func](data, RPCProxy, type, category, input);
+    }
+}
+        };
+
+        window.bt = service;
+        return service;
+    }
+])
+
+.run([&quot;DuckieTorrent&quot;, &quot;uTorrent&quot;, &quot;SettingsService&quot;,
+    function(DuckieTorrent, uTorrent, SettingsService) {
+        if (SettingsService.get('torrenting.enabled')) {
+DuckieTorrent.register('uTorrent', uTorrent);
+        }
+    }
+]);</code></pre>
+          <div class="footer site-footer">
+            <div class="span site-footer-owner"><a href="https://github.com/mr-doc/mr-doc-theme-cayman">Cayman</a> is maintained by <a href="https://github.com/iwatakeshi">iwatakeshi</a>.</div>
+            <div class="span site-footer-credits">This page was generated by <a href="https://github.com/mr-doc/mr-doc">Mr. Doc</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/affix.js"></script>
+    <script src="../../js/dropdown.js"></script>
+    <script src="../../js/scrollspy.js"></script>
+    <script src="../../js/prism.js"></script>
+    <script src="../../js/prism-bash.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('body').scrollspy({
+          target: ".bs-docs-sidebar",
+          offset: 40
+        });
+        $('#sidebar').affix({
+          offset:{
+            bottom:60,
+            top: 60
+          }
+        }) 
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>DuckieTV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/cayman.css">
+    <link rel="stylesheet" href="../../css/prism.css">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">DuckieTV</h1>
+      <h2 class="project-tagline">DuckieTV helps you manage your favorite TV Shows on a sweet calendar</h2><a href="https://npmjs.com/package/DuckieTV-Standalone" target="_blank" class="btn">View on npm</a>
+    </section>
+    <section data-spy="scroll" data-target=".scrollspy" class="main-content">
+      <div class="row">
+        <div class="col-md-3 col-xs-3 bs-docs-sidebar">
+          <ul id="sidebar" class="nav nav-stacked fixed">
+            <li><a href="../../index.html">Main</a></li>
+            <li><a href="../../CRUD.entities.js.html">CRUD.entities.js</a></li>
+            <li><a href="../../app.authHttpBackend.js.html">app.authHttpBackend.js</a></li>
+            <li><a href="../../app.js.html">app.js</a></li>
+            <li><a href="../../app.requestinterceptors.js.html">app.requestinterceptors.js</a></li>
+            <li><a href="../../app.routes.js.html">app.routes.js</a></li>
+            <li><a href="../../app.standalone.systray.js.html">app.standalone.systray.js</a></li>
+            <li><a href="../../app.standalone.update.js.html">app.standalone.update.js</a></li>
+            <li><a href="../../app.standalone.windowdressing.js.html">app.standalone.windowdressing.js</a></li>
+            <li><a href="../../app.standalone.zoom.js.html">app.standalone.zoom.js</a></li>
+            <li><a href="../../app.translate.js.html">app.translate.js</a></li>
+            <li><a href="../../background.js.html">background.js</a></li>
+            <li><a href="../../classes/RemoteAPI.js.html">classes/RemoteAPI.js</a></li>
+            <li><a href="../../controllers/ActionBarCtrl.js.html">controllers/ActionBarCtrl.js</a></li>
+            <li><a href="../../controllers/WatchlistCtrl.js.html">controllers/WatchlistCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/LocalSeriesCtrl.js.html">controllers/serieslist/LocalSeriesCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/SeriesListCtrl.js.html">controllers/serieslist/SeriesListCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/TraktTVSearchCtrl.js.html">controllers/serieslist/TraktTVSearchCtrl.js</a></li>
+            <li><a href="../../controllers/serieslist/TraktTVTrendingCtrl.js.html">controllers/serieslist/TraktTVTrendingCtrl.js</a></li>
+            <li><a href="../../controllers/settings/BackupCtrl.js.html">controllers/settings/BackupCtrl.js</a></li>
+            <li><a href="../../controllers/settings/CalendarCtrl.js.html">controllers/settings/CalendarCtrl.js</a></li>
+            <li><a href="../../controllers/settings/DisplayCtrl.js.html">controllers/settings/DisplayCtrl.js</a></li>
+            <li><a href="../../controllers/settings/LanguageCtrl.js.html">controllers/settings/LanguageCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SerieTorrentSettingsCtrl.js.html">controllers/settings/SerieTorrentSettingsCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SettingsTorrentCtrl.js.html">controllers/settings/SettingsTorrentCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SubtitlesCtrl.js.html">controllers/settings/SubtitlesCtrl.js</a></li>
+            <li><a href="../../controllers/settings/SyncCtrl.js.html">controllers/settings/SyncCtrl.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Deluge.js.html">controllers/settings/TorrentClients/Deluge.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Tixati.js.html">controllers/settings/TorrentClients/Tixati.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Transmission.js.html">controllers/settings/TorrentClients/Transmission.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/Vuze.js.html">controllers/settings/TorrentClients/Vuze.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/qBittorrent.js.html">controllers/settings/TorrentClients/qBittorrent.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/qBittorrent32plus.js.html">controllers/settings/TorrentClients/qBittorrent32plus.js</a></li>
+            <li><a href="../../controllers/settings/TorrentClients/uTorrentWebUI.js.html">controllers/settings/TorrentClients/uTorrentWebUI.js</a></li>
+            <li><a href="../../controllers/settings/TraktTVCtrl.js.html">controllers/settings/TraktTVCtrl.js</a></li>
+            <li><a href="../../controllers/settings/customSearchEngineCtrl.js.html">controllers/settings/customSearchEngineCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/AboutCtrl.js.html">controllers/sidepanel/AboutCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SettingsCtrl.js.html">controllers/sidepanel/SettingsCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelEpisodeCtrl.js.html">controllers/sidepanel/SidepanelEpisodeCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelSeasonCtrl.js.html">controllers/sidepanel/SidepanelSeasonCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelSeasonsCtrl.js.html">controllers/sidepanel/SidepanelSeasonsCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelSerieCtrl.js.html">controllers/sidepanel/SidepanelSerieCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/SidepanelTraktSerieCtrl.js.html">controllers/sidepanel/SidepanelTraktSerieCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/TorrentCtrl.js.html">controllers/sidepanel/TorrentCtrl.js</a></li>
+            <li><a href="../../controllers/sidepanel/TorrentDetailsCtrl.js.html">controllers/sidepanel/TorrentDetailsCtrl.js</a></li>
+            <li><a href="../../directives/backgroundRotator.js.html">directives/backgroundRotator.js</a></li>
+            <li><a href="../../directives/calendar.js.html">directives/calendar.js</a></li>
+            <li><a href="../../directives/calendarEvent.js.html">directives/calendarEvent.js</a></li>
+            <li><a href="../../directives/chromeTopSites.js.html">directives/chromeTopSites.js</a></li>
+            <li><a href="../../directives/datePicker.js.html">directives/datePicker.js</a></li>
+            <li><a href="../../directives/episodeDownloaded.js.html">directives/episodeDownloaded.js</a></li>
+            <li><a href="../../directives/episodeWatched.js.html">directives/episodeWatched.js</a></li>
+            <li><a href="../../directives/fastSearch.js.html">directives/fastSearch.js</a></li>
+            <li><a href="../../directives/focusWatch.js.html">directives/focusWatch.js</a></li>
+            <li><a href="../../directives/lazyBackground.js.html">directives/lazyBackground.js</a></li>
+            <li><a href="../../directives/loadingSpinner.js.html">directives/loadingSpinner.js</a></li>
+            <li><a href="../../directives/mouseWheelDown.js.html">directives/mouseWheelDown.js</a></li>
+            <li><a href="../../directives/mouseWheelUp.js.html">directives/mouseWheelUp.js</a></li>
+            <li><a href="../../directives/queryMonitor.js.html">directives/queryMonitor.js</a></li>
+            <li><a href="../../directives/serieDetails.js.html">directives/serieDetails.js</a></li>
+            <li><a href="../../directives/serieheader.js.html">directives/serieheader.js</a></li>
+            <li><a href="../../directives/seriesList.js.html">directives/seriesList.js</a></li>
+            <li><a href="../../directives/sidePanel.js.html">directives/sidePanel.js</a></li>
+            <li><a href="../../directives/stopEvent.js.html">directives/stopEvent.js</a></li>
+            <li><a href="../../directives/subtitleDialog.js.html">directives/subtitleDialog.js</a></li>
+            <li><a href="../../directives/targetBlank.js.html">directives/targetBlank.js</a></li>
+            <li><a href="../../directives/torrentDialog.js.html">directives/torrentDialog.js</a></li>
+            <li><a href="../../directives/torrentRemoteControl.js.html">directives/torrentRemoteControl.js</a></li>
+            <li><a href="../../services/AutoDownloadService.js.html">services/AutoDownloadService.js</a></li>
+            <li><a href="../../services/BaseHTTPApi.js.html">services/BaseHTTPApi.js</a></li>
+            <li><a href="../../services/CalendarEvents.js.html">services/CalendarEvents.js</a></li>
+            <li><a href="../../services/ChromeStorageSyncTarget.js.html">services/ChromeStorageSyncTarget.js</a></li>
+            <li><a href="../../services/DuckieTorrent.js.html">services/DuckieTorrent.js</a></li>
+            <li><a href="../../services/EpisodeWatchedMonitor.js.html">services/EpisodeWatchedMonitor.js</a></li>
+            <li><a href="../../services/FavoritesService.js.html">services/FavoritesService.js</a></li>
+            <li><a href="../../services/FileReader.js.html">services/FileReader.js</a></li>
+            <li><a href="../../services/FormlyLoaderService.js.html">services/FormlyLoaderService.js</a></li>
+            <li><a href="../../services/GoogleImages.js.html">services/GoogleImages.js</a></li>
+            <li><a href="../../services/IMDB.js.html">services/IMDB.js</a></li>
+            <li><a href="../../services/MigrationService.js.html">services/MigrationService.js</a></li>
+            <li><a href="../../services/Netflix.js.html">services/Netflix.js</a></li>
+            <li><a href="../../services/NotificationService.js.html">services/NotificationService.js</a></li>
+            <li><a href="../../services/OpenSubtitles.js.html">services/OpenSubtitles.js</a></li>
+            <li><a href="../../services/PowderPlayer.js.html">services/PowderPlayer.js</a></li>
+            <li><a href="../../services/SceneNameResolver.js.html">services/SceneNameResolver.js</a></li>
+            <li><a href="../../services/SceneXemResolver.js.html">services/SceneXemResolver.js</a></li>
+            <li><a href="../../services/SettingsService.js.html">services/SettingsService.js</a></li>
+            <li><a href="../../services/StorageSyncService.js.html">services/StorageSyncService.js</a></li>
+            <li><a href="../../services/SyncManager.js.html">services/SyncManager.js</a></li>
+            <li><a href="../../services/TorrentClients/BaseTorrentClient.js.html">services/TorrentClients/BaseTorrentClient.js</a></li>
+            <li><a href="../../services/TorrentClients/Deluge.js.html">services/TorrentClients/Deluge.js</a></li>
+            <li><a href="../../services/TorrentClients/Tixati.js.html">services/TorrentClients/Tixati.js</a></li>
+            <li><a href="../../services/TorrentClients/TorrentData.js.html">services/TorrentClients/TorrentData.js</a></li>
+            <li><a href="../../services/TorrentClients/Transmission.js.html">services/TorrentClients/Transmission.js</a></li>
+            <li><a href="../../services/TorrentClients/Vuze.js.html">services/TorrentClients/Vuze.js</a></li>
+            <li><a href="../../services/TorrentClients/qBittorrent.js.html">services/TorrentClients/qBittorrent.js</a></li>
+            <li><a href="../../services/TorrentClients/qBittorrent32plus.js.html">services/TorrentClients/qBittorrent32plus.js</a></li>
+            <li><a href="../../services/TorrentClients/uTorrent.js.html">services/TorrentClients/uTorrent.js</a></li>
+            <li><a href="../../services/TorrentClients/uTorrentWebUI.js.html">services/TorrentClients/uTorrentWebUI.js</a></li>
+            <li><a href="../../services/TorrentFreak.js.html">services/TorrentFreak.js</a></li>
+            <li><a href="../../services/TorrentHashListService.js.html">services/TorrentHashListService.js</a></li>
+            <li><a href="../../services/TorrentMonitor.js.html">services/TorrentMonitor.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/GenericTorrentSearchEngine.js.html">services/TorrentSearchEngines/GenericTorrentSearchEngine.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Kickass.js.html">services/TorrentSearchEngines/Kickass.js</a></li>
+            <li class="active"><a href="../../services/TorrentSearchEngines/KickassMirrorResolver.js.html">services/TorrentSearchEngines/KickassMirrorResolver.js
+                <ul class="nav nav-stacked">
+                  <li><a href="#getUrl"><i class="alert alert-info"></i><span>getUrl</span></a>
+                  </li>
+                  <li><a href="#parseRockAProxy"><i class="alert alert-info"></i><span>parseRockAProxy</span></a>
+                  </li>
+                  <li><a href="#parseKATTestSearch"><i class="alert alert-info"></i><span>parseKATTestSearch</span></a>
+                  </li>
+                  <li><a href="#service"><i class="alert alert-success"></i><span>service</span></a>
+                  </li>
+                  <li><a href="#findKATMirror"><i class="alert alert-info"></i><span>findKATMirror</span></a>
+                  </li>
+                  <li><a href="#verifyKATMirror"><i class="alert alert-info"></i><span>verifyKATMirror</span></a>
+                  </li>
+                </ul></a></li>
+            <li><a href="../../services/TorrentSearchEngines/Nyaa.js.html">services/TorrentSearchEngines/Nyaa.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/RarBG.js.html">services/TorrentSearchEngines/RarBG.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/ShowRSS.js.html">services/TorrentSearchEngines/ShowRSS.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Strike.js.html">services/TorrentSearchEngines/Strike.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/ThePirateBay.js.html">services/TorrentSearchEngines/ThePirateBay.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/ThePirateBayMirrorResolver.js.html">services/TorrentSearchEngines/ThePirateBayMirrorResolver.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/TorrentSearchEngines.js.html">services/TorrentSearchEngines/TorrentSearchEngines.js</a></li>
+            <li><a href="../../services/TorrentSearchEngines/Torrentz.eu.js.html">services/TorrentSearchEngines/Torrentz.eu.js</a></li>
+            <li><a href="../../services/TraktTVStorageSyncTarget.js.html">services/TraktTVStorageSyncTarget.js</a></li>
+            <li><a href="../../services/TraktTVTrending.js.html">services/TraktTVTrending.js</a></li>
+            <li><a href="../../services/TraktTVUpdateService.js.html">services/TraktTVUpdateService.js</a></li>
+            <li><a href="../../services/TraktTVv2.js.html">services/TraktTVv2.js</a></li>
+            <li><a href="../../services/UpgradeNotificationService.js.html">services/UpgradeNotificationService.js</a></li>
+            <li><a href="../../services/WatchlistCheckerService.js.html">services/WatchlistCheckerService.js</a></li>
+            <li><a href="../../services/WatchlistService.js.html">services/WatchlistService.js</a></li>
+            <li><a href="../../utility.js.html">utility.js</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div class="description"><p>Automatic mirror resolver for KickassTorrent by utilizing unlocktorrent.com</p></div>
+          <pre><code class="language-javascript">DuckieTV.factory('KickassMirrorResolver', [&quot;$q&quot;, &quot;$http&quot;, &quot;$injector&quot;,
+    function($q, $http, $injector) {
+
+        var $rootScope = $injector.get('$rootScope'),
+            maxAttempts = 49,
+            endpoints = {
+                kickasstorrents: 'http://www.rockaproxy.com/allTorrentLinksPage.php'
+            },
+            failedMirrors = []; // Keep a list of failed mirrors so that we don't try the same one twice.</code></pre>
+          <section id="getUrl">
+            <h1>getUrl</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>&nbsp;</span><span>getUrl()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Switch between search and details</p></div>
+          <pre><code class="language-javascript">function getUrl(type) {
+    return endpoints[type];
+}</code></pre>
+          <section id="parseRockAProxy">
+            <h1>parseRockAProxy</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>&nbsp;</span><span>parseRockAProxy()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Pick a random mirror for KickAssTorrents from piratelist.net<br />run them through array.prototype.<function>.call</p></div>
+          <pre><code class="language-javascript">function parseRockAProxy(result) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(result.data, &quot;text/html&quot;);
+
+    var mirrorList = [];
+    Array.prototype.map.call(doc.querySelectorAll('td span[id=&quot;linknametext&quot;]'), function(el) {
+        if (el.parentNode.innerText.indexOf('KickAssTorrents') &gt; -1) {
+            mirrorList.push(el.parentNode.innerText.trim().replace('KickAssTorrents - ', ''));
+        }
+    });
+    //console.debug(&quot;MirrorList&quot;, mirrorList);
+    return pickRandomMirror(mirrorList);
+}
+
+function pickRandomMirror(mirrorList) {
+    var item = mirrorList[Math.floor(Math.random() * mirrorList.length - 1)];
+    do {
+        item = mirrorList[Math.floor(Math.random() * mirrorList.length - 1)];
+    } while (failedMirrors.indexOf(item) &gt; -1)
+    return item;
+}</code></pre>
+          <section id="parseKATTestSearch">
+            <h1>parseKATTestSearch</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">function</div><span>&nbsp;</span><span>parseKATTestSearch()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>When a KickAss Torrent test search has been executed, verify that at least one magnet link is available in the<br />expected layout. (Some proxies proxy your magnet links so they can track them, we don&#39;t want that.)</p></div>
+          <pre><code class="language-javascript">function parseKATTestSearch(result, allowUnsafe) {
+    var parser = new DOMParser();
+    var doc = parser.parseFromString(result.data, &quot;text/html&quot;);
+    var icon16s = doc.querySelectorAll('table.data tr &gt; td:nth-child(1) &gt; div.iaconbox.center.floatright &gt; a.icon16');
+    var result = null;
+    for (var i = 0; i &lt; icon16s.length; i++) {
+        if (icon16s[i].title &amp;&amp; icon16s[i].title.indexOf('magnet') != -1) {
+          result = icon16s[i];
+          break;
+        }
+    }
+    doc = parser = icon16s = null;
+    return result &amp;&amp; result.href &amp;&amp; (allowUnsafe ? true : result.href.indexOf('magnet') == 0);
+}</code></pre>
+          <section id="service">
+            <h1>service</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-success radius ctx-type">declaration</div><span>&nbsp;</span><span>service</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Get wrapper, providing the actual search functions and result parser<br />Provides promises so it can be used in typeahead as well as in the rest of the app</p></div>
+          <pre><code class="language-javascript">var service = {</code></pre>
+          <section id="findKATMirror">
+            <h1>findKATMirror</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>findKATMirror()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Find a random mirror for KickAss Torrents and return the promise when<br />one is found and verified. If a valid working server is not found within x tries, it fails.<br />Provides up-to-date status messages via mirrorresolver:status while doing that</p></div>
+          <pre><code class="language-javascript">findKATMirror: function(attempt) {
+    attempt = attempt || 1;
+    $rootScope.$broadcast('katmirrorresolver:status', 'Finding a random KAT Mirror, attempt ' + attempt);
+    var d = $q.defer();
+    $http({ // Fetch the document that gives a mirror
+        method: 'GET',
+        url: getUrl('kickasstorrents'),
+        cache: false
+    }).then(function(response) {
+        // Parse the response
+        var location = parseRockAProxy(response);
+        //console.debug('mirror picked', response);
+        $rootScope.$broadcast('katmirrorresolver:status', &quot;Found KickAss Torrents mirror! &quot; + location + &quot; Verifying if it uses magnet links.&quot;);
+        // Verify that the mirror works by executing a test search, otherwise try the process again
+        service.verifyKATMirror(location).then(function(location) {
+            //console.debug(&quot;Mirror uses magnet links!&quot;, location);
+            d.resolve(location);
+        }, function(err) {
+            if (attempt &lt; maxAttempts) {
+                failedMirrors.push(location);
+                if (err.status)
+                    $rootScope.$broadcast('katmirrorresolver:status', &quot;Mirror does not do magnet links.. trying another one.&quot;);
+                d.resolve(service.findKATMirror(attempt + 1));
+            } else {
+                $rootScope.$broadcast(&quot;katmirrorresolver:status&quot;, &quot;Could not resolve a working mirror in &quot; + maxAttempts + &quot; tries. KAT is probably down.&quot;);
+                d.reject(&quot;Could not resolve a working mirror in &quot; + maxAttempts + &quot; tries. KAT is probably down.&quot;);
+            }
+        });
+    }, function(err) {
+        console.error('error!');
+        d.reject(err);
+    });
+    return d.promise;
+},</code></pre>
+          <section id="verifyKATMirror">
+            <h1>verifyKATMirror</h1>
+            <h5 class="subheader"></h5>
+            <p>
+              <div class="label label-info radius ctx-type">method</div><span>&nbsp;</span><span>verifyKATMirror()</span><span>&nbsp;</span>
+            </p>
+          </section>
+          <div class="description"><p>Verify that a specific KAT mirror is working and using magnet links by executing a test search<br />Parses the results and checks that magnet links are available like they are on KAT.<br />Some mirrors will not provide direct access to magnet links so we filter those out</p></div>
+          <pre><code class="language-javascript">verifyKATMirror: function(location, maxTries) {
+    if (maxTries) {
+        maxAttempts = maxTries;
+    };
+    $rootScope.$broadcast('katmirrorresolver:status', &quot;Verifying if mirror is using magnet links!: &quot; + location);
+    var q = $q.defer();
+
+    var testLocation = location + &quot;/usearch/test&quot;;
+    $http({
+        method: 'GET',
+        url: testLocation
+    }).then(function(response) {
+        $rootScope.$broadcast('katmirrorresolver:status', &quot;Results received, parsing&quot;);
+        if (parseKATTestSearch(response, $rootScope.getSetting('proxy.allowUnsafe'))) {
+            $rootScope.$broadcast('katmirrorresolver:status', &quot;Yes it does!&quot;);
+            q.resolve(location);
+        } else {
+            $rootScope.$broadcast('katmirrorresolver:status', &quot;This is a mirror that intercepts magnet links. bypassing.&quot;);
+            q.reject(location);
+        }
+    }, function(err) {
+        $rootScope.$broadcast('katmirrorresolver:status', 'error! HTTP Status: ' + angular.toJson(err.status));
+        q.reject(err);
+    });
+    return q.promise;
+},
+
+        };
+        return service;
+    }
+
+]);</code></pre>
+          <div class="footer site-footer">
+            <div class="span site-footer-owner"><a href="https://github.com/mr-doc/mr-doc-theme-cayman">Cayman</a> is maintained by <a href="https://github.com/iwatakeshi">iwatakeshi</a>.</div>
+            <div class="span site-footer-credits">This page was generated by <a href="https://github.com/mr-doc/mr-doc">Mr. Doc</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/affix.js"></script>
+    <script src="../../js/dropdown.js"></script>
+    <script src="../../js/scrollspy.js"></script>
+    <script src="../../js/prism.js"></script>
+    <script src="../../js/prism-bash.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('body').scrollspy({
+          target: ".bs-docs-sidebar",
+          offset: 40
+        });
+        $('#sidebar').affix({
+          offset:{
+            bottom:60,
+            top: 60
+          }
+        }) 
+      });
+    </script>
+  </body>
+</html>
